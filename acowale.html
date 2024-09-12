@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACONEWS</title>
+    <link rel="stylesheet" href="acowale.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo-container">
+            <img src="aco.jpg" alt="ACONEWS Logo" class="logo-img">
+            <div class="logo-text">ACONEWS</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#latest">Latest News</a></li>
+            <li><a href="#trending">News Categories</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo-container">
+            <img src="aco.jpg" alt="ACONEWS Logo" class="logo-img">
+            <div class="logo-text">ACONEWS</div>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#latest" onclick="toggleMenu()">Latest News</a></li>
+                <li><a href="#trending" onclick="toggleMenu()">News Categories</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="latest">
+        <h1 class="title">Latest News</h1>
+        <div class="search-box">
+            <form id="search-form">
+                <input type="text" id="search-bar" placeholder="Search news...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div id="news-container" class="box-container"></div>
+    </section>
+    <section id="trending">
+        <h1 class="title">News Categories</h1>
+        <div class="box-container">
+            <div class="box">
+                <h2>Sports</h2>
+                <div class="search-box">
+                    <form id="sports-search-form">
+                        <input type="text" id="sports-search-bar" placeholder="Search Sports news...">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="sports-news-container"></div>
+            </div>
+            <div class="box">
+                <h2>Education</h2>
+                <div class="search-box">
+                    <form id="education-search-form">
+                        <input type="text" id="education-search-bar" placeholder="Search Education news...">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="education-news-container"></div>
+            </div>
+            <div class="box">
+                <h2>Technology</h2>
+                <div class="search-box">
+                    <form id="technology-search-form">
+                        <input type="text" id="technology-search-bar" placeholder="Search Technology news...">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="technology-news-container"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-image">
+            <img src="acowale1.jpg" alt="Contact Image">
+        </div>
+        <h1 class="title">Contact Us</h1>
+        <div class="contact-box">
+            <h2>Get in Touch</h2>
+            <a href="https://acowale.com/" class="contact-link">Visit Acowale</a>
+        </div>
+    </section>
+    <div class="background-container"></div>
+    <script src="acowale.js"></script>
+</body>
+</html>
